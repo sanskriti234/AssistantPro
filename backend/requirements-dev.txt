@@ -1,0 +1,5 @@
+# Only needed to run scripts/convert_minifas_to_onnx.py once. The running
+# application never imports torch - see app/ml/liveness_detector.py, which
+# uses only ONNX Runtime (already in requirements.txt).
+torch
+onnxscript

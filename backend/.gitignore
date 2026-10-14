@@ -1,0 +1,20 @@
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+*.env
+
+# Google credential/token artifacts - never commit
+credentials.json
+token.json
+client_secret*.json
+service-account*.json
+
+# Model weights - large binaries, fetched via scripts/download_model_weights.sh
+# + scripts/convert_minifas_to_onnx.py instead. See README "Real AI model
+# integration".
+models/
+
+
+# uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
